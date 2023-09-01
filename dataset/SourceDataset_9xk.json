@@ -1,0 +1,25 @@
+{
+	"name": "SourceDataset_9xk",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "nombre",
+				"type": "nvarchar"
+			},
+			{
+				"name": "apellido",
+				"type": "nvarchar"
+			},
+			{
+				"name": "telefono",
+				"type": "nvarchar"
+			}
+		]
+	}
+}
