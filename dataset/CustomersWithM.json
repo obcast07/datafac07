@@ -1,0 +1,19 @@
+{
+	"name": "CustomersWithM",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "adfprueba1"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
