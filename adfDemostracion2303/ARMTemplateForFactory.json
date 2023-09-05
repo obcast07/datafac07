@@ -80,7 +80,12 @@
 							{
 								"referenceName": "CustomersWithM",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"CUSTOMERS_M": {
+										"value": "@formatDateTime(utcnow())",
+										"type": "Expression"
+									}
+								}
 							}
 						]
 					}
@@ -116,10 +121,6 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"fileName": {
-							"value": "@formatDateTime(utcnow())",
-							"type": "Expression"
-						},
 						"container": "adfprueba1"
 					},
 					"compressionCodec": "none"
