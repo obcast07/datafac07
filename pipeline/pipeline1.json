@@ -50,7 +50,13 @@
 				"outputs": [
 					{
 						"referenceName": "CustomersWithM",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"CUSTOMERS_M": {
+								"value": "@formatDateTime(utcnow())",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
