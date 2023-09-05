@@ -74,19 +74,24 @@
 					"referenceName": "AzureBlobStorage1",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"CUSTOMERS_M": {
+						"type": "string",
+						"defaultValue": "CustomersWithM"
+					}
+				},
 				"annotations": [],
 				"type": "Parquet",
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"fileName": "CustomersWithM",
-						"folderPath": "parquet",
+						"fileName": {
+							"value": "@concat('CustomersWithM', dataset().CUSTOMERS_M)",
+							"type": "Expression"
+						},
 						"container": "adfprueba1"
 					},
-					"compressionCodec": {
-						"value": "@formatDateTime(utcNow(),'yyyy-MM-dd [HH]')",
-						"type": "Expression"
-					}
+					"compressionCodec": "none"
 				},
 				"schema": []
 			},
