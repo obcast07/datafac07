@@ -110,6 +110,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
+						"fileName": "CustomersWithM",
+						"folderPath": "parquet",
 						"container": "adfprueba1"
 					},
 					"compressionCodec": {
