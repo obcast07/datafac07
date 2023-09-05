@@ -112,7 +112,10 @@
 						"type": "AzureBlobStorageLocation",
 						"container": "adfprueba1"
 					},
-					"compressionCodec": "snappy"
+					"compressionCodec": {
+						"value": "@formatDateTime(utcNow(),'yyyy-MM-dd [HH]')",
+						"type": "Expression"
+					}
 				},
 				"schema": []
 			},
