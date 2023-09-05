@@ -117,7 +117,7 @@
 					"location": {
 						"type": "AzureBlobStorageLocation",
 						"fileName": {
-							"value": "@concat('CustomersWithM', dataset().CUSTOMERS_M)",
+							"value": "@formatDateTime(utcnow())",
 							"type": "Expression"
 						},
 						"container": "adfprueba1"
